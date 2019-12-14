@@ -1,0 +1,16 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav--closed {
+  display:none;
+}
+
+@media (min-width: $pc) {
+
+  .main-nav--closed {
+    display: flex;
+  }
+}
+

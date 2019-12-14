@@ -1,0 +1,19 @@
+.changer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.changer__button {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border: 3px solid $white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.changer__button--price {
+  border-color: $gray;
+}

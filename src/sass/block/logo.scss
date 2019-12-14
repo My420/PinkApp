@@ -1,0 +1,64 @@
+
+.logo__container {
+  margin-left: -72px;
+  margin-top: -17px;
+}
+.logo__star,
+.logo__glasses {
+  display: none;
+}
+
+.page-footer .logo__container {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+  .page-footer .logo__glasses--2 {
+    display: block;
+  }
+
+ .page-footer .logo__glasses--2 {
+    fill: $menu-hover;
+  }
+
+  .page-footer .logo__letter {
+    fill: $main-nav-color;
+  }
+
+
+
+@media (min-width: $tablet) {
+
+  .logo__container {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+  .logo__glasses--2 {
+    display: block;
+  }
+}
+
+@media (min-width: $pc) {
+  .logo__star,
+  .logo__glasses {
+    display: block;
+  }
+
+  .logo__glasses--2 {
+    display: block;
+  }
+
+  .page-footer .logo__letter {
+    fill: $main-nav-color;
+  }
+
+  .page-footer .logo__glasses--1 path:nth-child(2) {
+    fill: $menu-hover;
+  }
+
+   .page-footer .logo__star--2 path,
+   .page-footer .logo__star--3 path,
+   .page-footer .logo__star--4 path {
+      fill: $main-nav-color;
+    }
+
+}

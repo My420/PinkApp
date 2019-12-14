@@ -1,0 +1,40 @@
+.stores {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stores__item {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.stores__item--apple {
+  width: 48px;
+  height: 58px;
+}
+
+.stores__item--android {
+  width: 46px;
+  height: 48px;
+  margin-left:33px;
+
+}
+.stores__item--wp {
+  width: 44px;
+  height: 42px;
+  margin-left: 33px;
+}
+
+@media (min-width: $tablet) {
+  .stores__item--wp {
+    margin-bottom: 5px;
+  }
+}

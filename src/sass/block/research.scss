@@ -1,0 +1,120 @@
+@media (min-width: $tablet) {
+
+  .research__wrapper {
+    display: flex;
+    padding-top: 92px;
+    padding-bottom: 140px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 232px 272px;
+    background-repeat: no-repeat;
+    background-position: 4px 55px;
+  }
+  .research__digit-wrapper {
+    width: 310px;
+  }
+
+  .research__digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin-top: 17px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 150px;
+    background-color: $white;
+    color: $menu-hover;
+    border: 13px solid $menu-hover;
+    border-radius: 50%;
+  }
+
+  .research__description {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .research__title {
+    display: block;
+    width: 180px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+  }
+
+  .research__text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .research__full-text {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $menu-hover;
+  }
+}
+
+@media (min-width: $pc) {
+  .research__description {
+    width: 555px;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .research__title {
+    width: 300px;
+    margin-top: 24px;
+    line-height: 30px;
+  }
+
+  .research__text {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__full-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__wrapper {
+    padding-top: 44px;
+    padding-bottom: 153px;
+    justify-content: center;
+    align-items: center;
+    background-size: 300px 350px;
+    background-position: 0px -6px;
+  }
+
+  .research__digit-wrapper {
+    justify-content: center;
+    align-items: center;
+    margin-right: 67px;
+    margin-left: 0px;
+    padding-top: 22px;
+    width: auto;
+    height: auto;
+  }
+
+  .research__digit {
+    width: 220px;
+    height: 220px;
+    margin: 0px;
+    border: 17px solid $menu-hover;
+    font-size: 120px;
+    line-height: 186px;
+  }
+
+  .research__full-text {
+    margin-top: 30px;
+  }
+
+}

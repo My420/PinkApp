@@ -1,0 +1,214 @@
+.table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table__row {
+  display: flex;
+}
+
+.table__service,
+.table__header {
+  width: 280px;
+  box-sizing: border-box;
+  border: 1px solid $gray;
+}
+
+.table__header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $main-nav-color;
+  border-top: none;
+  border-bottom: none;
+}
+
+.table__header--1 {
+  min-width: 100px;
+}
+
+.table__header--hot {
+  position: relative;
+  background-image: url("../img/bg-hit.svg");
+  background-size: 70px 72px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.table__header--hot::after {
+ content:"Хит";
+ display: inline-block;
+ position: absolute;
+ top: 10px;
+ left: 13px;
+ font-size: 14px;
+ font-weight: 300;
+ color: $white;
+ text-transform: uppercase;
+ transform: rotate(-44deg);
+}
+
+.table__tariff {
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.table__cost {
+  font-size: 24px;
+  font-weight: 300;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.table__service {
+  padding: 13px 21px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: $white;
+}
+
+.table__service--yes {
+  background-image: url("../img/icon-yes.svg");
+  background-size: 32px 22px;
+  background-repeat: no-repeat;
+  background-position: 230px 18px;
+}
+
+.table__service--no {
+  background-image: url("../img/icon-no.svg");
+  background-size: 32px 22px;
+  background-repeat: no-repeat;
+  background-position: 230px 18px;
+}
+
+.table__row:nth-of-type(2) .table__service {
+  border-top: none;
+}
+
+.price__radio--four:checked ~ .table .table__service--1,
+.price__radio--four:checked ~ .table .table__header--1,
+.price__radio--four:checked ~ .table .table__service--3,
+.price__radio--four:checked ~ .table .table__header--3,
+.price__radio--four:checked ~ .table .table__service--4,
+.price__radio--four:checked ~ .table .table__header--4 {
+  display: none;
+}
+
+.price__radio--five:checked ~ .table .table__service--1,
+.price__radio--five:checked ~ .table .table__header--1,
+.price__radio--five:checked ~ .table .table__service--2,
+.price__radio--five:checked ~ .table .table__header--2,
+.price__radio--five:checked ~ .table .table__service--4,
+.price__radio--five:checked ~ .table .table__header--4 {
+  display: none;
+}
+
+.price__radio--six:checked ~ .table .table__service--1,
+.price__radio--six:checked ~ .table .table__header--1,
+.price__radio--six:checked ~ .table .table__service--2,
+.price__radio--six:checked ~ .table .table__header--2,
+.price__radio--six:checked ~ .table .table__service--3,
+.price__radio--six:checked ~ .table .table__header--3 {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+
+  .price .price__wrapper .table .table__service,
+  .price .price__wrapper .table .table__header {
+    display: flex;
+  }
+
+  .table__service,
+  .table__header {
+    width: 156px;
+  }
+
+  .table__header {
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
+  .table__header--hot {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .table__header--hot::after {
+    content:"Хит";
+    top: 9px;
+    left: 6px;
+}
+
+  .table__header--1 {
+    opacity: 0;
+  }
+
+  .table__text--hidden {
+    display: none;
+  }
+
+  .table__service {
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+
+  }
+
+  .table__service--yes {
+    background-position: center center;
+  }
+
+  .table__service--no {
+    background-position: center center;
+  }
+
+
+  .table__tariff {
+    font-size: 16px;
+  }
+
+  .table__cost {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $pc) {
+  .table__service,
+  .table__header {
+    width: 236px;
+  }
+
+  .table__header {
+    padding-bottom: 17px;
+    padding-top: 18px;
+  }
+
+  .table__tariff {
+    font-size: 18px;
+  }
+
+  .table__cost {
+    font-size: 24px;
+  }
+
+  .table__service {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 21px;
+    font-size: 18px;
+  }
+
+   .table__header--hot {
+    background-image: url("../img/bg-hit.svg");
+  }
+
+  .table__header--hot::after {
+    top: 14px;
+    left: 10px;
+  }
+}

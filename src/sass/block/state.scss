@@ -1,0 +1,250 @@
+
+.logo[href]:hover .logo__word path {
+  fill: $menu-hover;
+}
+
+.logo[href]:active .logo__word path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+
+.page-header__button:hover {
+  background-image: linear-gradient( to bottom left, transparent 45%, $menu-hover 45%, $menu-hover 55%, transparent 55%, transparent 100%),
+                    linear-gradient( to bottom right, transparent 45%, $menu-hover 45%, $menu-hover 55%, transparent 55%, transparent 100%);
+}
+
+.page-header__button--open:hover {
+  background-image: linear-gradient( $menu-hover 16%, transparent 16%, transparent 42%, $menu-hover 42%, $menu-hover 58%, transparent 58%, transparent 84%, $menu-hover 84%, $menu-hover 100%);
+}
+
+.page-header__button:active {
+  background-image: linear-gradient( to bottom left, transparent 45%, $menu-active 45%, $menu-active 55%, transparent 55%, transparent 100%),
+                    linear-gradient( to bottom right, transparent 45%, $menu-active 45%, $menu-active 55%, transparent 55%, transparent 100%);
+}
+
+.page-header__button--open:active {
+  background-image: linear-gradient( $menu-active 16%, transparent 16%, transparent 42%, $menu-active 42%, $menu-active 58%, transparent 58%, transparent 84%, $menu-active 84%, $menu-active 100%);
+}
+
+.site-list__text[href]:hover {
+  color: $menu-hover;
+}
+
+.site-list__text[href]:active {
+  color: $menu-active;
+}
+
+.mobile-os__button:hover {
+  background-color: $white;
+  color: $menu-hover;
+}
+
+.mobile-os__button:active {
+  background-color: $white;
+  color: $menu-active;
+}
+
+.changer__button:hover {
+  background-color: #7e868f;
+}
+
+.changer__button:active {
+  background-color: #e9ebec;
+}
+
+.contact__info:hover {
+  text-decoration: underline;
+  color: $main-nav-color;
+}
+
+.contact__info:active {
+  color: $main-nav-color;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+.page-footer__designed:hover path{
+   fill: $main-nav-color;
+}
+
+.page-footer__designed:active path{
+   fill: rgba(40, 54,69, 0.3);
+}
+
+.page-footer__service:hover {
+   border-color: $main-nav-color;
+}
+
+.page-footer__service:active {
+  border-color: rgba(40, 54,69, 0.3);
+  opacity: 0.3;
+}
+
+.page-footer .logo[href]:hover .logo__letter {
+    fill: $menu-hover;
+  }
+
+  .page-footer .logo[href]:active .logo__letter {
+    fill: rgba(40, 54,69, 0.3);
+  }
+
+  .page-footer .logo[href]:active .logo__glasses--2 {
+    fill: rgba(210, 40, 86, 0.3);
+  }
+
+.gallery__like-button:hover {
+  opacity: 0.5;
+}
+
+.gallery__like-button:active {
+  opacity: 0.3;
+}
+
+.upload__radio--crop:checked ~ .upload__filters-wrapper .upload__filter--crop:hover,
+.upload__radio--fill:checked ~ .upload__filters-wrapper .upload__filter--fill:hover,
+.upload__radio--contrast:checked ~ .upload__filters-wrapper .upload__filter--contrast:hover {
+  fill: $menu-hover;
+}
+
+.upload__radio--crop:not(checked) ~ .upload__filters-wrapper .upload__filter--crop:hover,
+.upload__radio--fill:not(checked) ~ .upload__filters-wrapper .upload__filter--fill:hover,
+.upload__radio--contrast:not(checked) ~ .upload__filters-wrapper .upload__filter--contrast:hover {
+  fill: #8d949b;
+}
+
+.upload__circle:hover {
+  background-color: $menu-hover;
+}
+
+.upload__button--reset:hover {
+  border-color: #b5b9be;
+  color: #b5b9be;
+}
+
+.upload__button--reset:active{
+  border-color: #b5b9be;
+  background-color: #b5b9be;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.upload__button--submit:hover {
+  background-color: $menu-hover;
+  color: $white;
+}
+
+.upload__button--submit:active {
+  background-color: $menu-hover;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.information__text:hover {
+  border-color: $main-nav-color;
+}
+
+.information__text:active {
+  border-color: $menu-hover;
+  outline: none;
+}
+
+.information__block--achievement .information__label:hover:before {
+  border-color: $main-nav-color;
+}
+
+.information__block--achievement .information__label:active:before {
+  border-color: $menu-hover;
+}
+
+.information__block--platform .information__label:hover:before {
+  border-color: $main-nav-color;
+}
+
+.information__block--platform .information__label:active:before {
+  border-color: $menu-hover;
+}
+
+.popup__button:hover,
+.information__button:hover {
+  background-color: #1c9b5e;
+}
+
+.popup__button:active,
+.information__button:active {
+ color: rgba(255, 255, 255, 0.3);
+}
+
+.popup__button:disabled,
+.information__button:disabled {
+  background-color: #e5e5e5;
+  color: $white;
+}
+
+.errorInput {
+  border-color: red;
+}
+
+@media (min-width: $tablet) {
+
+  .logo[href]:hover .logo__glasses--2  {
+    fill: $menu-hover;
+  }
+
+  .logo[href]:active .logo__glasses--2  {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .research__full-text:hover {
+    color: $main-nav-color;
+  }
+
+  .research__full-text:active {
+    color: $main-nav-color;
+    opacity: 0.3;
+  }
+
+}
+
+@media (min-width: $pc) {
+
+  .page-header .logo[href]:hover path {
+    fill: $menu-hover;
+  }
+
+  .page-header .logo[href]:active path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .page-header .logo[href]:active .logo__glasses--2 {
+    fill: transparent;
+  }
+
+
+  .site-list__text[href]:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  .page-footer .logo[href]:active {
+    opacity: 0.3;
+  }
+
+  .reviews__scroll--left:hover:after {
+    border-left-color: $main-nav-color;
+    border-bottom-color: $main-nav-color;
+  }
+
+  .reviews__scroll--right:hover:after {
+    border-right-color: $main-nav-color;
+    border-top-color: $main-nav-color;
+  }
+
+  .reviews__scroll--left:active:after {
+    border-left-color: #bec2c7;
+    border-bottom-color: #bec2c7;
+    opacity: 0.3;
+  }
+
+  .reviews__scroll--right:active:after {
+    border-right-color: #bec2c7;
+    border-top-color: #bec2c7;
+    opacity: 0.3;
+  }
+}
