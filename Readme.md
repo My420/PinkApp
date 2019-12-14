@@ -1,4 +1,4 @@
-# [Pink](https://my420.github.io/PinkApp/)
+# [PinkApp](https://my420.github.io/PinkApp/)
 
 ##### адаптивная верстка, ретина, БЭМ, Sass, Gulp, HTML5, CSS3, JS, ES5.
 
